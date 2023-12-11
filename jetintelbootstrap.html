@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.7.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="jetintelstylescssmodified.css">
+  <title>JetIntel Home</title>
+</head>
+<body>
+
+  <!-- Load menubar.html dynamically -->
+  <header>
+    <div id="menubar-container"></div>
+    <script>
+      // Use fetch to load menubar.html
+      fetch('menubarbootstrap.html')
+        .then(response => response.text())
+        .then(data => {
+          // Inject the content into the menubar-container
+          document.getElementById('menubar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading menubarbootstrap.html:', error));
+    </script>
+
+  </header>
+
+  <section id="video-section">
+    <div id="video-container">
+      <!-- Video file can be placed here -->
+      <video autoplay loop muted>
+        <source src="Vid final jetintel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="video-overlay" class="container text-center">
+      <h1 id="welcome-text">Welcome to JetIntel</h1>
+      <h2 id="slogan-text">Unveiling the Skies, Spec by Spec!</h2>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Explore Aircrafts...</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="comafsbootstrap.html">Commercial Aircrafts</a>
+          <a href="noncomafsbootstrap.html">Non-Commercial Aircrafts</a>
+          <a href="milafsbootstrap.html">Military Aircrafts</a>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <footer class="container text-center">
+    <p><center>&copy; 2023 JetIntel. All rights reserved.</center></p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.7.2/js/bootstrap.min.js"></script>
+</body>
+</html>

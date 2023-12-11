@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Aircrafts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="comafsstyles.css">
+</head>
+<body>
+
+  <!-- Load menubar.html dynamically -->
+
+  <div id="menubar-container"></div>
+  <script>
+    // Use fetch to load menubar.html
+    fetch('menubarbootstrap.html')
+      .then(response => response.text())
+      .then(data => {
+        // Inject the content into the menubar-container
+        document.getElementById('menubar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading menubarbootstrap.html:', error));
+  </script>
+
+  <section class="container mt-4">
+    <h1 id="slogan-text">Military Aircrafts</h1>
+
+    <div class="row">
+
+
+      <!-- McDonnell Douglas F-15 Eagle -->
+      <div class="card">
+        <img src="McDonnell Douglas F-15 Eagle Background Removed.png" alt="McDonnell Douglas F-15 Eagle" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">McDonnell Douglas F-15 Eagle</h2>
+          <p class="card-text">Maximum Speed: Mach 2.5+<br>Range: 3,450 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Lockheed Martin F-22 Raptor -->
+      <div class="card">
+        <img src="Lockheed Martin F-22 Raptor Background Removed.png" alt="Lockheed Martin F-22 Raptor" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Lockheed Martin F-22 Raptor</h2>
+          <p class="card-text">Maximum Speed: Mach 2.25+<br>Range: 1,840 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Dassault Rafale -->
+      <div class="card">
+        <img src="Dassault Rafale Background Removed.png" alt="Dassault Rafale" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Dassault Rafale</h2>
+          <p class="card-text">Maximum Speed: Mach 1.8<br>Range: 2,300 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Mikoyan-Gurevich MiG-21 -->
+      <div class="card">
+        <img src="Mikoyan-Gurevich MiG-21 Background Removed.png" alt="Mikoyan-Gurevich MiG-21" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Mikoyan-Gurevich MiG-21</h2>
+          <p class="card-text">Maximum Speed: Mach 2.1<br>Range: 800 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Eurofighter Typhoon -->
+      <div class="card">
+        <img src="Eurofighter Typhoon Background Removed.png" alt="Eurofighter Typhoon" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Eurofighter Typhoon</h2>
+          <p class="card-text">Maximum Speed: Mach 2+<br>Range: 1,840 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Sukhoi Su-30MKI -->
+      <div class="card">
+        <img src="Sukhoi Su-30MKI Background Removed.png" alt="Sukhoi Su-30MKI" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Sukhoi Su-30MKI</h2>
+          <p class="card-text">Maximum Speed: Mach 2<br>Range: 1,930 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- General Dynamics F-16 Fighting Falcon -->
+      <div class="card">
+        <img src="F-16 Background Removed.png" alt="General Dynamics F-16 Fighting Falcon" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">General Dynamics F-16 Fighting Falcon</h2>
+          <p class="card-text">Maximum Speed: Mach 2+<br>Range: 2,665 nautical miles</p>
+        </div>
+      </div>
+
+      <!-- Add more card blocks for other airplanes as needed -->
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach((card) => {
+        card.style.animation = 'fadeIn 1s';
+      });
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

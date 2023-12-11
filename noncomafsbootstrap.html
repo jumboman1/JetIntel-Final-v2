@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Commercial Aircrafts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="comafsstyles.css">
+</head>
+<body>
+
+  <!-- Load menubar.html dynamically -->
+  <div id="menubar-container"></div>
+  <script>
+    // Use fetch to load menubar.html
+    fetch('menubarbootstrap.html')
+      .then(response => response.text())
+      .then(data => {
+        // Inject the content into the menubar-container
+        document.getElementById('menubar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading menubarbootstrap.html:', error));
+  </script>
+
+  <section class="container mt-4">
+    <h1 id="slogan-text">Non-Commercial Aircrafts</h1>
+
+    <div class="row">
+      <div class="card">
+        <img src="Bombardier Global 8000 Background Removed.png" alt="Bombardier Global 8000" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Bombardier Global 8000</h2>
+          <p class="card-text">Capacity: Up to 17 passengers<br>Length: 39.5 meters<br>Range: 7,900 nautical miles<br>Maximum Cruise Speed: Mach 0.925</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Bombardier-Challenger-3500 Background Removed.png" alt="Bombardier-Challenger-3500" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Bombardier-Challenger-3500</h2>
+          <p class="card-text">Capacity: Up to 16 passengers<br>Length: 20.9 meters<br>Range: 3,200 nautical miles<br>Maximum Cruise Speed: Mach 0.83</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="cessna-citation-m2-1540x960 Background Removed.png" alt="Cessna Citation M2" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Cessna Citation M2</h2>
+          <p class="card-text">Capacity: Up to 6 passengers<br>Length: 12.6 meters<br>Range: 1,550 nautical miles<br>Maximum Cruise Speed: Mach 0.74</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="bombardier-global-6500 Background Removed.png" alt="Bombardier Global 6500" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Bombardier Global 6500</h2>
+          <p class="card-text">Capacity: Up to 19 passengers<br>Length: 36 meters<br>Range: 4,500 nautical miles<br>Maximum Cruise Speed: Mach 0.82</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="embraer-lineage-1000-1540x960 Background Removed.png" alt="Embraer Lineage 1000" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Embraer Lineage 1000</h2>
+          <p class="card-text">Capacity: Up to 19 passengers<br>Length: 36 meters<br>Range: 4,500 nautical miles<br>Maximum Cruise Speed: Mach 0.82</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="hondajet-exterior-1540x960 Background Removed.png" alt="HondaJet" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">HondaJet</h2>
+          <p class="card-text">Capacity: Up to 6 passengers<br>Length: 12.1 meters<br>Range: 1,437 nautical miles<br>Maximum Cruise Speed: Mach 0.78</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="GulfStream G500 Background Removed.png" alt="GulfStream G500" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">GulfStream G500</h2>
+          <p class="card-text">Capacity: Up to 19 passengers<br>Length: 26.9 meters<br>Range: 5,300 nautical miles<br>Maximum Cruise Speed: Mach 0.90</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="GulfStream G800 Background Removed.png" alt="GulfStream G800" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">GulfStream G800</h2>
+          <p class="card-text">Capacity: Up to 19 passengers<br>Length: 34.5 meters<br>Range: 7,500 nautical miles<br>Maximum Cruise Speed: Mach 0.90</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Dassault Falcon 900 Background Removed.png" alt="Dassault Falcon 900" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Dassault Falcon 900</h2>
+          <p class="card-text">Capacity: Up to 19 passengers<br>Length: 20.2 meters<br>Range: 4,600 nautical miles<br>Maximum Cruise Speed: Mach 0.84</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Embraer Legacy 600 Background Removed.png" alt="Embraer Legacy 600" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">Embraer Legacy 600</h2>
+          <p class="card-text">Capacity: Up to 13 passengers<br>Length: 26 meters<br>Range: 3,250 nautical miles<br>Maximum Cruise Speed: Mach 0.80</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card) => {
+          card.style.animation = 'fadeIn 1s';
+        });
+      });
+    </script>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

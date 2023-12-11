@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JetIntel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        p.about {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header class="text-white">
+
+    <div id="menubar-container"></div>
+    <script>
+      // Use fetch to load menubar.html
+      fetch('menubarbootstrap.html')
+        .then(response => response.text())
+        .then(data => {
+          // Inject the content into the menubar-container
+          document.getElementById('menubar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading menubarbootstrap.html:', error));
+    </script>
+
+</header>
+
+<main>
+    <h1>Contact Us</h1>
+    <p class="about">JetIntel is your go-to destination for detailed aircraft specifications, providing aviation enthusiasts with comprehensive information about their favorite planes. Whether you're a pilot, aviation professional, or simply passionate about aircraft, JetIntel delivers accurate and up-to-date data on a wide range of airplanes. If you have any questions, feedback, or if there's a specific aircraft you'd like us to cover, please reach out to us using the form below. We appreciate your interest in JetIntel and look forward to connecting with fellow aviation enthusiasts!</p>
+
+    <p>Phone: 1234567890 </p>
+    <p>Email : xyz@gmail.com </p>
+</main>
+
+<!-- Bootstrap JS and Popper.js (for Bootstrap modal) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

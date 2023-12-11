@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jetintelstyles.css"><style>
+  #login-section {
+    margin-top: 50px; /* Adjust this value as needed */
+    text-align: center;
+  }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div id="menubar-container"></div>
+    <script>
+      // Use fetch to load menubar.html
+      fetch('menubarbootstrap.html')
+        .then(response => response.text())
+        .then(data => {
+          // Inject the content into the menubar-container
+          document.getElementById('menubar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading menubarbootstrap.html:', error));
+    </script>
+  </header>
+
+
+    <!-- Login form -->
+    <section id="login-section">
+      <h1>Welcome to JetIntel</h1>
+      <form action="login_process.php" method="POST">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="login-username" required><br><br>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required><br><br>
+
+        <input type="submit" value="Login">
+      </form>
+    </section>
+
+
+</body>
+</html>

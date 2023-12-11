@@ -1,0 +1,40 @@
+body {
+    padding-top: 50px; /* Adjust the value based on the height of your fixed header */
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f1f1f1; /* Add a background color for better visibility */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; /* Add some padding for better aesthetics */
+  }
+
+  .title {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+
+  .nav-bar a {
+    margin-right: 15px; /* Adjust the margin between navigation links */
+    text-decoration: none;
+    color: black;
+  }
+
+  .back-button {
+    margin-right: 0;
+  }
+
+  .search-bar {
+    margin-right: 10px; /* Adjust the margin between search bar and navigation links */
+  }
+
+  .search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
